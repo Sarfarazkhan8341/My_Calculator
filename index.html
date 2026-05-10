@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="flex justify-center items-center gap-10">
+    <div class="h-full w-125  bg-black border-2 my-[5%] rounded-4xl">
+        <form action="/submit-data" method="POST" class="h-full">
+            <div class="text-orange-600 bg-black h-full text-center text-4xl my-2 border-black rounded-4xl">Calculator</div>
+            <input type="text" id="name" name="user_name" required class="w-[80%] bg-white border-2 h-24 text-right mx-[10%] rounded-3xl">
+            <div id="cal-in" class="grid grid-cols-4 grid-rows-4 h-125 w-125 bg-black gap-4 mt-4 rounded-4xl">
+                <div id="1" class="border rounded-full  flex justify-center items-center btn bg-gray-50">1</div>
+                <div id="2" class="border rounded-full  flex justify-center items-center btn bg-gray-50">2</div>
+                <div id="3" class="border rounded-full  flex justify-center items-center btn bg-gray-50">3</div>
+                <div id="+" class="border rounded-full  flex justify-center items-center btn bg-orange-600">+</div>
+                <div id="4" class="border rounded-full  flex justify-center items-center btn bg-gray-50">4</div>
+                <div id="5" class="border rounded-full  flex justify-center items-center btn bg-gray-50">5</div>
+                <div id="6" class="border rounded-full  flex justify-center items-center btn bg-gray-50">6</div>
+                <div id="-" class="border rounded-full  flex justify-center items-center btn bg-orange-600">-</div>
+                <div id="7" class="border rounded-full  flex justify-center items-center btn bg-gray-50">7</div>
+                <div id="8" class="border rounded-full  flex justify-center items-center btn bg-gray-50">8</div>
+                <div id="9" class="border rounded-full  flex justify-center items-center btn bg-gray-50">9</div>
+                <div id="*" class="border rounded-full  flex justify-center items-center btn bg-orange-600">*</div>
+                <div id="0" class="col-span-2 border rounded-full  flex justify-center items-center btn bg-gray-50">0</div>
+                <div id="=" class="border rounded-full  flex justify-center items-center btn_equal bg-orange-600">=</div>
+                <div id="/" class="border rounded-full  flex justify-center items-center btn bg-orange-600">/</div>
+            </div>
+        </form>
+    </div>
+    <div class="bg-amber-50 flex justify-center items-center btn_clear border h-24 w-50">clear</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
